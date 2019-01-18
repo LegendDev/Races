@@ -1,0 +1,65 @@
+# Thank you for downloading Races!
+# Developer: HuliPvP & LegendDev
+# Version 2.6.7
+
+# Use this to be able to skip the GUI on join
+skipGuiOnJoin: 'false'
+
+# This is for when you want to a random firework,
+# "random" meaning random effect and color, 
+# to be shot in the sky when a Player selects a Race
+fireworkEnabled: 'true'
+
+# Enable this if you want the tags to show up in chat as a prefix or suffix
+# Enable this if you want to use placeholders as well
+enableTags: 'true'
+
+# When you use the command /topraces you can either choose to show a player
+# a GUI with the top races or send a message (both configurable in messages.yml)
+# The two options for this are “gui” and “message”
+TopRacesCommand: gui
+
+# You can choose how to sort the top Races by choosing the statistic that Races
+# would compete for. By default, it’s sorted by kills.
+# Options include:
+# kills, balance, deaths, oresMined, mobKills
+SortTopRacesBy: kills
+
+# Enable this option to override your server’s /spawn
+# command. When a player does /spawn and they are in a Race,
+# they will be teleported to their Race spawn.
+overrideSpawnCommand: true
+
+# You can toggle this on and off in game by using the following command:
+# /ff <enable|disable|on|off>
+friendlyFire: false
+
+# Use Placeholder {RACE}
+# You can use this to put prefixes or suffixes on players
+# You can set the tags of each race inside races.yml
+usePlaceholder: true
+
+# Enabling this will disable /channel entirely
+DisableChannels: false
+# This will determine what kind of channel it is
+# Dynamic: Player will be able to listen to Global and their race's chat at the 
+# same time and easily switch between them when they type /channel
+# Static: Players will only be able to see the channel that they are in for 
+# example when a player types /channel Test they join the Test race channel and they can only see the Test race channel.
+# Use 'static' or 'dynamic' to enable either one of these
+# channeltype: 'static'
+channeltype: 'dynamic'
+# You can edit the channel formats in the messages.yml
+
+# If this is true it will run the commands below
+doCommands: 'true'
+
+# A list of commands that the console will run when a player selects a race
+# These will only run if 'doCommands' is true
+# Use %race% to get the name of Race the player joined
+# Use %player% for the name of the player
+commands:
+  - /racespawn %race% %player%
+  - /kit starter %player%
+
+spawn: {}

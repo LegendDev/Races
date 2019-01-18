@@ -1,0 +1,137 @@
+Prefix: '&6&lRaces &8»&e'
+Messages:
+  racespawn: '%preifx% You did not set the race spawn correctly'
+  noperms: '%prefix% No permission!'
+  invalidrace: '%prefix% That race does not exist!'
+  selected: '%prefix% You have select %race%'
+  spawnset: '%prefix% Spawn set!'
+  teleporting: '%prefix% Teleporting to %spawn%...'
+  teleportingother: '%prefix% Sending %player% to %spawn%'
+  invalidspawn: '%prefix% Spawn %spawn% does not exist!'
+  playeroffline: '%prefix% That player is offline!'
+  updatedchanges: '%prefix% Updated racechanges for %player%'
+  updatedtootherplayer: 
+  - '%prefix% You have been given x%amount% racechanges'
+  - '%prefix% You now have x%changes% racechanges!'
+  spawndeleted: '%prefix% Spawn deleted!'
+  addedracechanges: '%prefix% Updated racechanges for %player%!'
+  notenough:
+  - '%prefix% You do not have any racechanges available!'
+  - '%prefix% You currently have x%changes% changes available'
+  usedchange:
+  - '%prefix% You have used a racechange!'
+  - '%prefix% You currently have x%changes% changes available'
+  channelsdisabled: '%prefix% Channels are currently disabled!'
+  invalidchannel: '%prefix% This channel does not exist!'
+  noaccesstochannel: '%prefix% You do not have access to this channel!'
+  switchedchannels: '%prefix% You have switched to %channel% chat'
+  dynamicswitchedchannels:
+  - '%prefix% %race% chat enabled!'
+  - '%prefix% Type /channel (msg) to send just one message!'
+  racedisabled: '&e&l(!) &6That race is disabled!'
+  noplayerrace: '%prefix% That player has no race.'
+  havenorace: '%prefix% You do not have a race.'
+  setplayerrace: '%prefix% You set %player%''s race to %race%!'
+  raceset: '%prefix% Your race was set to %race% by %player%!'
+  noraceavailable: '%prefix% That player does not have a race!'
+  whatrace: '%prefix% %player% is in the race %race%'
+  racefull: '%prefix% The race %race% is currently full!'
+  alreadyhaverace: '%prefix% You already have a race!'
+  blockedracecommand: '%prefix% That command is disabled in your race!'
+  toggledfriendlyfire: '%prefix% You have %toggledState% Friendly Fire for Races!'
+  notenoughmoney: '%prefix% You do not have enough money for this deposit.'
+  moneydeposited: '%prefix% You have deposited %amount% into your race.'
+  prizereceived: '%prefix% Your Race received a prize for being a top competitor!'
+  prizegiven: '%prefix% Your gave prizes to the %race% (Prize: %type% - %data%)'
+  openingvault: '%prefix% Opening Race vault...'
+  invalidclaim: '%prefix% You have either not chosen two corners or the territory is invalid'
+  successfulclaim: '%prefix% You have successfully made a claim for %race%'
+  enterringterritory: '%prefix% You are entering the territory of &f%race%'
+  leavingterritory: '%prefix% You are leaving the territory of &f%race%'
+Broadcasts:
+  raceSelect: '&e&l(!) &6%player% &eselected the &6%race% &erace!'
+Gui:
+  size: 18
+  title: '&eSelect your race...'
+  enabledLore:
+  - ' '
+  - '&a&nENABLED'
+  disabledLore:
+  - ' '
+  - '&c&nDISABLED'
+ConfirmGui:
+  size: 27
+  title: '&eOne Time Race Change'
+  confirmItem:
+    slot: 12
+    material: WOOL
+    data: 5
+    displayName: '&a&nCONFIRM'
+    lore:
+    - '&eYou are confirming that you have one Race Change left!'
+    - ' '
+    - '&eAfter this, you can by more Race Changes'
+    - '&6&ostore.store.com'
+  denyItem:
+    slot: 16
+    material: WOOL
+    data: 14
+    displayName: '&c&nDENY'
+    lore:
+    - '&eRight click me to cancel this Race Change'
+InvalidArgs:
+  channelstatic: '%prefix% /channel [human, orc, elf, dwarf, global]'
+  channeldynamic: '%prefix% /channel (msg)'
+  addracechanges: '%prefix% /addracechanges (player) (number)'
+  setracespawn: '%prefix% /setracespawn (race)'
+  channel: '%prefix% /channel [human, orc, elf, dwarf, global]'
+  race: '%prefix% Invalid args! Type /race help'
+Channels:
+ format: '&6[&e%channel%&6] &e%player% &8» &7%msg%' 
+Help:
+  Messages:
+  - '&6=========&eRaces&6========='
+  - '&eCommands:'
+  - '&6/setracespawn (race)'
+  - '&6/racespawn (race) (optional: player)'
+  - '&6/delracespawn (spawn)'
+  - '&6/addracechanges (player) (amount)'
+  - '&6/setrace (player) (race)'
+  - '&6/whatrace (player)'
+  - '&6/changerace'
+  - '&6/channel'
+  - '&6/friendlyfire (on|off|enable|disable)'
+  - '&6/racestats (race|player)'
+  - '&6/recedeposit (number)'
+  - '&6/racegiveall (raceName|all) (money|command) (prize)'
+  - '&6/racevault'
+  - '&6/raceterritory (wand|add) (race)'
+  - '&eThank you for downloading races!'
+Racestats:
+  statsmessage:
+  - '&7&m--------------------------------------'
+  - '&6&l%name%'
+  - '&eKills: &6%kills%'
+  - '&eDeaths: &6%deaths%'
+  - '&eBalance: &6%balance%'
+  - '&eOres Mined: &6%oresMined%'
+  - '&eMob Kills: &6%mobKills%'
+  - '&7&m-------------------------------------'
+Vault:
+  size: 27
+  title: '&e&l(!) Race Vault'
+TopRaces:
+  messages:
+    topline: '&7&m------&r &r&8[&6Top Races&8] &7&m------'
+    raceposition: '&e{number}. &6{name} &7- &e${balance}&7, &e{kills} kills'
+  gui:
+    size: 9
+    title: '&e&l(!) Top Races'
+    itemName: '&e&l{number}. {displayName}'
+    raceLore:
+    - '&eKills: &6{kills}'
+    - '&eDeaths: &6{deaths}'
+    - '&eBalance: &6{balance}'
+    - '&eOres Mined: &6{oresMined}'
+    - '&eMob Kills: &6{mobKills}'
+ 

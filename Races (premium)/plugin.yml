@@ -1,0 +1,28 @@
+name: Races
+version: 2.6.7
+author: [LegendDev,HuliPvP]
+main: me.legenddev.legendraces.Main
+softdepend: [PlaceholderAPI, Vault]
+commands:
+  changerace:
+  addracechanges:
+  setracespawn:
+  racespawn:
+  delracespawn:
+  channel:
+  setrace:
+    aliases: [sr]
+  whatrace:
+    aliases: [wr]
+  chooserace:
+  race:
+    aliases: [races]
+  friendlyfire:
+    aliases: [ff]
+  racestats:
+  racedeposit:
+  racegiveall:
+    aliases: [rgiveall, giveallraces]
+  racevault:
+  topraces:
+  raceterritory:

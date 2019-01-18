@@ -1,0 +1,99 @@
+races:
+  Human:
+    enabled: true
+    name: Human
+    icon:
+      displayName: '&e&lHuman'
+      material: GOLD_SWORD
+      data: 0
+    slot: 4
+    description:
+    - '&eDescription: &7Inquisistive, resillient, versatile.'
+    - '&7Humans are a young race that are'
+    - '&7known for their accomplishments in' 
+    - '&7Empire Building, Exploration and Magic.'
+    tag: '&8(&eHuman&8)&r '
+    permission: races.human
+    effects:
+    - increase_damage 1
+    kills: 0
+    deaths: 0
+    balance: 0
+    oresMined: 0
+    mobKills: 0
+    permissions:
+    - essentials.help
+    - essentials.spawn
+  Dwarf:
+    enabled: true
+    name: Dwarf
+    icon:
+      displayName: '&c&lDwarf'
+      material: GOLD_PICKAXE
+      data: 0
+    slot: 5
+    description:
+    - '&cDescription: &7Miners, drunken, explosive.'
+    - '&7Dwarves are a stout little race,'
+    - '&7that is built for a war economy,' 
+    - '&7they love War, Drinking and Mining.'
+    tag: '&8(&cDwarf&8)&r '
+    permission: races.dwarf
+    effects:
+    - fast_digging 1
+    kills: 0
+    deaths: 0
+    balance: 0
+    oresMined: 0
+    mobKills: 0
+  Elf:
+    enabled: true
+    name: Elf
+    icon:
+      displayName: '&a&lElf'
+      material: BOW
+      data: 0
+    slot: 6
+    description:
+    - '&aDescription: &7Intelligent, perceptive, quick.' 
+    - '&7Elves are an extremely mature race'
+    - '&7made famous throughout the ages for' 
+    - '&7Wisdom, War-Stratagists and Vitality.'
+    tag: '&8(&aElf&8)&r '
+    permission: races.elf
+    effects:
+    - speed 1
+    blockedCommands:
+    - item
+    - whatrace
+    - lol
+    kills: 0
+    deaths: 0
+    balance: 0
+    oresMined: 0
+    mobKills: 0
+    permissions:
+    - essentials.help
+    - essentials.spawn
+  Orc:
+    enabled: true
+    name: Orc
+    icon:
+      displayName: '&4&lOrc'
+      material: GOLD_AXE
+      data: 0
+    slot: 14
+    description:
+    - '&4Description: &7Tribal, barbaric, ruthless' 
+    - '&7Orcs are an ancient, tribal race,'
+    - '&7feared throughout the realms for their' 
+    - '&7Immense Strength and Brute Barbatism.'
+    tag: '&8(&4Orc&8)&r '
+    permission: races.orc
+    effects:
+    - damage_resistance 1
+    kills: 0
+    deaths: 0
+    balance: 0
+    oresMined: 0
+    mobKills: 0
